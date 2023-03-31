@@ -1,0 +1,149 @@
+/* Reset CSS */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* Header */
+.header {
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	padding: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__logo img {
+	height: 50px;
+}
+
+.header__nav ul {
+	list-style: none;
+	display: flex;
+	align-items: center;
+}
+
+.header__nav li:not(:last-child) {
+	margin-right: 1rem;
+}
+
+.header__nav a {
+	text-decoration: none;
+	color: #333;
+	font-weight: 700;
+	transition: all 0.3s ease-in-out;
+}
+
+.header__nav a:hover {
+	color: #f00;
+}
+
+/* Main */
+.main {
+	padding: 2rem 1rem;
+}
+
+/* Hero */
+.hero {
+	background-image: url('hero-bg.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.hero__content {
+	text-align: center;
+	color: #fff;
+}
+
+.hero__title {
+	font-weight: 700;
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+}
+
+.hero__subtitle {
+	font-weight: 300;
+	font-size: 1.5rem;
+}
+
+/* Intro */
+.intro {
+	margin: 3rem 0;
+}
+
+.intro__title {
+	font-weight: 700;
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+.intro__text {
+	margin-bottom: 1rem;
+}
+
+/* Values */
+.values {
+	margin: 3rem 0;
+}
+
+.values__title {
+	font-weight: 700;
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+.values__grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 2rem;
+}
+
+.value {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.value__title {
+	font-weight: 700;
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.value__text {
+	margin-bottom: 1rem;
+}
+
+.value img {
+	height: 50px;
+	margin-bottom: 1rem;
+}
+
+/* Footer */
+.footer {
+	background-color: #333;
+	color: #fff;
+	padding: 1rem;
+	text-align: center;
+	font-size: 0.8rem;
+}
